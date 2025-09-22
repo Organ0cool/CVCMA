@@ -1,0 +1,7 @@
+<?php
+// includes/config.php.example - RENOMBRAR a config.php y configurar
+define('DB_HOST', 'localhost');
+define('DB_NAME', 'nombre_base_datos');
+define('DB_USER', 'usuario');
+define('DB_PASS', 'password');
+?>

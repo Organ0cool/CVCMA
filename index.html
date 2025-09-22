@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Claudio Miranda – CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg" />
+  <meta name="description" content="CV de Claudio Miranda – Técnico de Soporte, Hardware/Software, Redes, CCTV, POS y más." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Currículum de Claudio Miranda: [tu stack], [años], proyectos y contacto." />
+  <link rel="canonical" href="https://tusitio.ejemplo/" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="script.js" defer></script>
+
+<!-- Open Graph -->
+<meta property="og:title" content="Claudio Miranda — CV / Portafolio" />
+<meta property="og:description" content="Desarrollo [tu especialidad]. Aquí verás proyectos, experiencia y contacto." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://tusitio.ejemplo/" />
+<meta property="og:image" content="https://tusitio.ejemplo/og-cover.jpg" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+</head>
+<body>
+  <!-- ===== Menú / Header fijo ===== -->
+  <header class="header" id="top">
+    <div class="container header__wrap">
+      <a class="brand" href="#top">
+        <img src="img/foto1.jpg" alt="Logo Claudio" class="brand__logo" />
+        <span class="brand__name">Claudio Miranda</span>
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+        <ul class="nav__list">
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#educacion">Estudios</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#portafolio">Portafolio</a></li>
+          <li><a href="#video">Video</a></li>
+          <li><a href="#contacto" class="btn btn--sm">Contáctanos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="container hero__wrap">
+      <div class="hero__text">
+        <h1 class="hero__title">Hola, soy <span>Claudio Miranda</span></h1>
+        <p class="hero__subtitle">
+          <span id="typing"></span>
+        </p>
+        <div class="hero__cta">
+          <a href="#contacto" class="btn">Contrátame</a>
+          <a href="#experiencia" class="btn btn--ghost">Ver experiencia</a>
+        </div>
+      </div>
+      <div class="hero__media">
+        <img class="hero__img"
+     src="./img/foto1.jpg"
+     alt="Retrato de Claudio Miranda"
+     width="260" height="260" loading="lazy" decoding="async">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Sobre mí ===== -->
+  <section id="sobre-mi" class="section reveal">
+    <div class="container grid-2">
+      <div>
+        <h2>Sobre mí</h2>
+        <p>
+          Técnico de soporte con amplia experiencia en hardware, software, redes, CCTV y
+          configuración de POS (Verifone, IZIPAY), con enfoque en atención al cliente y
+          resolución de incidencias in situ, remotas y telefónicas. Experiencia en
+          instalación de cableado estructurado, video walls, extensores HDMI/DisplayPort,
+          y configuración de DVR.
+        </p>
+        <ul class="list list--inline">
+          <li><strong>Edad:</strong> 38</li>
+          <li><strong>Nacionalidad:</strong> Peruano</li>
+          <li><strong>Ubicación:</strong> Callao, Perú</li>
+          <li><strong>Email:</strong> <a href="mailto:Claudiomiranda0311@gmail.com">Claudiomiranda0311@gmail.com</a></li>
+        </ul>
+        <div class="chips">
+          <span class="chip">Soporte Técnico</span>
+          <span class="chip">Redes</span>
+          <span class="chip">CCTV/DVR</span>
+          <span class="chip">POS Verifone/IZIPAY</span>
+          <span class="chip">Windows & Linux</span>
+        </div>
+      </div>
+      <div>
+        <div class="card">
+          <h3>Objetivo personal</h3>
+          <p>
+            Superarme en todos los aspectos de mi vida, brindando lo mejor de mí cada día,
+            tanto en el aspecto laboral como en el personal.
+          </p>
+          <a href="#modal-contacto" data-modal class="btn btn--ghost">Escríbeme</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Experiencia ===== -->
+  <section id="experiencia" class="section section--alt reveal">
+    <div class="container">
+      <h2>Experiencia</h2>
+
+      <article class="timeline">
+        <div class="timeline__item">
+          <div class="timeline__marker" aria-hidden="true"></div>
+          <div class="timeline__content">
+            <header class="timeline__header">
+              <h3>HIPER S.A – Técnico de Soporte</h3>
+              <span class="tag">Feb 2020 – Actualidad · Callao, Perú</span>
+            </header>
+            <ul class="bullets">
+              <li>Soporte de hardware y software (presencial, telefónico y remoto).</li>
+              <li>Instalación y mantenimiento de MS3000, MS2800, ticketeras BMatic (I870, NI870, I7000, K1500), molinetes TUUA.</li>
+              <li>Configuración y carga de software de POS Verifone (OMNI 7000, MX870, MX925, VX810, VX805, P400) e IZIPAY.</li>
+              <li>Instalación de redes, audio, video y cableado eléctrico.</li>
+              <li>Monitoreo remoto de videowalls y pantallas táctiles (Scotiabank, EVA UPC, EDELNOR).</li>
+              <li>Configuración de DVR y CCTV.</li>
+            </ul>
+            <a class="link" data-modal href="#modal-hiper">Ver detalles</a>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__marker" aria-hidden="true"></div>
+          <div class="timeline__content">
+            <header class="timeline__header">
+              <h3>Freelance – Técnico</h3>
+              <span class="tag">Ene 2018 – Feb 2020 · Callao, Perú</span>
+            </header>
+            <ul class="bullets">
+              <li>Instalación y configuración de redes, DVR y cámaras de seguridad.</li>
+              <li>Soporte a proyectores en salas de conferencia.</li>
+              <li>Reparación y mantenimiento de computadoras.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__marker" aria-hidden="true"></div>
+          <div class="timeline__content">
+            <header class="timeline__header">
+              <h3>HIPER S.A – Técnico de Hardware y Software</h3>
+              <span class="tag">Jul 2016 – Ene 2018 · Callao, Perú</span>
+            </header>
+            <ul class="bullets">
+              <li>Soporte de hardware y software, presencial y remoto.</li>
+              <li>Instalación y mantenimiento de MS3000, MS2800, POS MX870 y OMNI 7000.</li>
+              <li>Cableado, monitoreo de videowalls, mantenimiento CCTV y DVR.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__marker" aria-hidden="true"></div>
+          <div class="timeline__content">
+            <header class="timeline__header">
+              <h3>Freelance – Técnico</h3>
+              <span class="tag">Ene 2008 – Jun 2016 · Valencia, Venezuela</span>
+            </header>
+            <ul class="bullets">
+              <li>Implementación de BD con DBI SAM; soporte A2 Softway C.A.</li>
+              <li>Instalación/mantenimiento de PC, CCTV y redes.</li>
+              <li>Instalación de cercos eléctricos.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__marker" aria-hidden="true"></div>
+          <div class="timeline__content">
+            <header class="timeline__header">
+              <h3>Taller Mecánico Land Rover – Mecánico Automotriz</h3>
+              <span class="tag">May 2013 – May 2016 · Valencia, Venezuela</span>
+            </header>
+            <p>Instalación y reparación de frenos, motores, diferenciales, transmisiones, carrocería, chasis, clutch y sistema eléctrico.</p>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__marker" aria-hidden="true"></div>
+          <div class="timeline__content">
+            <header class="timeline__header">
+              <h3>QD SYSTEM, C.A – Técnico A2 Softway</h3>
+              <span class="tag">Dic 2006 – Dic 2007 · Valencia, Venezuela</span>
+            </header>
+            <p>Instalación, soporte y visitas a clientes del sistema administrativo A2 Softway C.A; implementación de BD con DBI SAM.</p>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__marker" aria-hidden="true"></div>
+          <div class="timeline__content">
+            <header class="timeline__header">
+              <h3>Corporación PCS, C.A – Técnico a Domicilio A2 Softway</h3>
+              <span class="tag">Abr 2005 – Dic 2006 · Valencia, Venezuela</span>
+            </header>
+            <p>Instalación, soporte, atención a clientes, implementación de BD con DBI SAM y mantenimiento de PC.</p>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__marker" aria-hidden="true"></div>
+          <div class="timeline__content">
+            <header class="timeline__header">
+              <h3>Centro de Comunicaciones Inter Click – At. al cliente / Soporte</h3>
+              <span class="tag">Feb 2003 – Mar 2005 · Valencia, Venezuela</span>
+            </header>
+            <p>Apertura/cierre, caja, reproducción y transcripción de documentos, soporte y mantenimiento de PC.</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== Educación ===== -->
+  <section id="educacion" class="section reveal">
+    <div class="container grid-2">
+      <div>
+        <h2>Estudios</h2>
+        <ul class="cards">
+          <li class="card">
+            <h3>Cisco Networking Academy</h3>
+            <p>IT Essentials: PC Hardware and Software (2021) – Lima, Perú.</p>
+          </li>
+          <li class="card">
+            <h3>U.E. “Jorge Luis Borges”</h3>
+            <p>Bachiller en Ciencias (2002) – Valencia, Venezuela.</p>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>Idiomas</h2>
+        <ul class="bars">
+          <li><span>Español</span><div class="bar"><div style="--pct: 100%"></div></div></li>
+          <li><span>Inglés</span><div class="bar"><div style="--pct: 60%"></div></div></li>
+        </ul>
+        <p class="muted">(Estimación de niveles auto-reportados)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Habilidades ===== -->
+  <section id="habilidades" class="section section--alt reveal">
+    <div class="container">
+      <h2>Habilidades</h2>
+      <div class="chips">
+        <span class="chip">MS Office</span>
+        <span class="chip">Windows 95 → 11</span>
+        <span class="chip">Linux</span>
+        <span class="chip">A2 Softway / Saint / Valery</span>
+        <span class="chip">CCTV & DVR</span>
+        <span class="chip">Video Wall</span>
+        <span class="chip">Redes</span>
+        <span class="chip">BMatic</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Portafolio ===== -->
+<section id="portafolio" class="section reveal">
+  <div class="container">
+    <h2>Portafolio</h2>
+    <div class="gallery">
+
+      <!-- Proyecto 1 -->
+      <figure class="gallery__item">
+        <!-- AQUÍ reemplazas el <img> por este bloque .fadeshow -->
+        <div class="fadeshow" data-interval="1500">
+          <img src="img/1ren.jpg" alt="Redes y CCTV - Vista 1" loading="lazy" />
+          <img src="assets/img/2ren.jpg" alt="Redes y CCTV - Vista 2" loading="lazy" />
+          <img src="assets/img/3ren.jpg" alt="Redes y CCTV - Vista 3" loading="lazy" />
+          <img src="assets/img/4ren.jpg" alt="Redes y CCTV - Vista 4" loading="lazy" />
+          <img src="assets/img/5ren.jpg" alt="Redes y CCTV - Vista 5" loading="lazy" />
+        </div>
+
+        <figcaption>
+          Instalación y configuración de equipos de RENIEC.
+          <a class="link" data-modal href="#modal-proyecto1">Detalles</a>
+        </figcaption>
+      </figure>
+
+      <!-- Proyecto 2 -->
+      <figure class="gallery__item">
+        <!-- AQUÍ también reemplazas el <img> por .fadeshow -->
+        <div class="fadeshow" data-interval="1500" aria-roledescription="carrusel" aria-label="Galería proyecto POS">
+          <img src="./img/1izi.jpg" alt="POS - Vista 1" loading="lazy" />
+          <img src="./img/2izi.jpg" alt="POS - Vista 2" loading="lazy" />
+          <img src="./img/2ibk.jpg" alt="POS - Vista 3" loading="lazy" />
+        </div>
+
+        <figcaption>
+          Configuración y mantenimiento de POS.
+          <!-- OJO: <button> con href no funciona; cámbialo por <a> -->
+          <a class="link" data-modal href="#modal-proyecto2">Detalles</a>
+        </figcaption>
+      </figure>
+
+      <!-- Proyecto 3 -->
+      <figure class="gallery__item">
+        <!-- AQUÍ también reemplazas el <img> por .fadeshow -->
+        <div class="fadeshow" data-interval="1500" aria-roledescription="carrusel" aria-label="Galería proyecto IBK">
+          <img src="./img/1ibk.jpg" alt="POS - Vista 1" loading="lazy" />
+          <img src="./img//2ibk.jpg" alt="POS - Vista 2" loading="lazy" />
+          <img src="./img/3ibk.jpg" alt="POS - Vista 3" loading="lazy" />
+        </div>
+
+        <figcaption>
+          Configuración y mantenimiento de POS IBK.
+          <!-- OJO: <button> con href no funciona; cámbialo por <a> -->
+          <a class="link" data-modal href="#modal-proyecto3">Detalles</a>
+        </figcaption>
+      </figure>
+
+       <!-- Proyecto 4 -->
+      <figure class="gallery__item">
+        <!-- AQUÍ también reemplazas el <img> por .fadeshow -->
+        <div class="fadeshow" data-interval="1500" aria-roledescription="carrusel" aria-label="Galería proyecto Redes y MTTO">
+          <img src="./img/1tec.jpg" alt="POS - Vista 1" loading="lazy" />
+          <img src="./img/2tec.jpg" alt="POS - Vista 2" loading="lazy" />
+          <img src="./img/1tk.jpg" alt="POS - Vista 3" loading="lazy" />
+          <img src="./img/2tk.jpg" alt="POS - Vista 3" loading="lazy" />
+          <img src="./img/1bcp.jpg" alt="POS - Vista 3" loading="lazy" />
+          <img src="./img/2bcp.jpg" alt="POS - Vista 3" loading="lazy" />
+        </div>
+
+        <figcaption>
+          Configuración y mantenimiento de Redes ticketeras.
+          <!-- OJO: <button> con href no funciona; cámbialo por <a> -->
+          <a class="link" data-modal href="#modal-proyecto4">Detalles</a>
+        </figcaption>
+      </figure>
+
+    </div>
+  </div>
+</section>
+  <div>
+  <div class="videos">
+    <!-- Video local 1 -->
+    <video
+      src="./video/VID_20210727_144335.mp4"
+      class="video"
+      controls
+      preload="metadata"
+      poster="./video/VID_20210727_144335.mp4">
+      <track kind="captions" src="assets/subs/presentacion.vtt" srclang="es" label="Español" />
+      Tu navegador no soporta la etiqueta video.
+    </video>
+
+    <!-- Video local 2 -->
+    <video
+      src="./video/VID_20210727_144522.mp4"
+      class="video"
+      controls
+      preload="metadata"
+      poster="./video/VID_20210727_144522.mp4">
+      <track kind="captions" src="assets/subs/presentacion-2.vtt" srclang="es" label="Español" />
+      Tu navegador no soporta la etiqueta video.
+    </video>
+
+    <!-- Si prefieres YouTube en vez de un video local, deja uno de los anteriores y usa también: -->
+    <!--
+    <iframe
+      class="video"
+      src="https://www.youtube.com/embed/VIDEO_ID_1"
+      title="Presentación 1 en YouTube"
+      loading="lazy"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
+
+    <iframe
+      class="video"
+      src="https://www.youtube.com/embed/VIDEO_ID_2"
+      title="Presentación 2 en YouTube"
+      loading="lazy"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
+    -->
+  </div>
+</div>
+
+
+  <!-- ===== Contacto (formulario con BD) ===== -->
+  <section id="contacto" class="section reveal">
+    <div class="container">
+      <h2>Contáctanos</h2>
+      <form id="contactForm" class="form" method="POST" action="contactos.php" novalidate>
+        <div class="form__row">
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="name" placeholder="Tu nombre" required />
+        </div>
+        <div class="form__row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+        </div>
+        <div class="form__row">
+          <label for="phone">Teléfono</label>
+          <input type="tel" id="phone" name="phone" placeholder="999 999 999" />
+        </div>
+        <div class="form__row">
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="5" placeholder="Cuentame el motivo de tu contacto" required></textarea>
+        </div>
+        <div class="form__actions">
+          <button class="btn" type="submit">Enviar</button>
+          <button class="btn btn--ghost" type="reset">Limpiar</button>
+        </div>
+        <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+  <div class="container footer__wrap">
+    <small>© 2025 Claudio Miranda · Callao, Perú</small>
+  </div>
+</footer>
+
+  <!-- ===== Modales ===== -->
+  <dialog id="modal-hiper" class="modal">
+    <article class="modal__card">
+      <header class="modal__header">
+        <h3>HIPER S.A – Detalles</h3>
+        <button data-close class="modal__close" aria-label="Cerrar">×</button>
+      </header>
+      <div class="modal__body">
+        <p>Experiencia en MS3000/MS2800, BMatic, Verifone, IZIPAY, videowalls y más. Consultar CV para listado completo.</p>
+      </div>
+      <footer class="modal__footer">
+        <button data-close class="btn">Cerrar</button>
+      </footer>
+    </article>
+  </dialog>
+
+  <dialog id="modal-proyecto1" class="modal">
+    <article class="modal__card">
+      <header class="modal__header">
+        <h3>Proyecto: Redes + CCTV</h3>
+        <button data-close class="modal__close" aria-label="Cerrar">×</button>
+      </header>
+      <div class="modal__body">
+        <p>Diseño de topología, cableado, configuración de DVR y puesta en marcha.</p>
+      </div>
+      <footer class="modal__footer">
+        <a class="btn btn--ghost" target="_blank" rel="noopener" href="assets/img/proyecto-1.jpg">Ver imagen</a>
+        <button data-close class="btn">Cerrar</button>
+      </footer>
+    </article>
+  </dialog>
+
+  <dialog id="modal-proyecto2" class="modal">
+    <article class="modal__card">
+      <header class="modal__header">
+        <h3>Proyecto: POS</h3>
+        <button data-close class="modal__close" aria-label="Cerrar">×</button>
+      </header>
+      <div class="modal__body">
+        <p>Instalación, configuración y mantenimiento de POS Verifone e IZIPAY.</p>
+      </div>
+      <footer class="modal__footer">
+        <a class="btn btn--ghost" target="_blank" rel="noopener" href="assets/img/proyecto-2.jpg">Ver imagen</a>
+        <button data-close class="btn">Cerrar</button>
+      </footer>
+    </article>
+  </dialog>
+
+  <dialog id="modal-contacto" class="modal">
+    <article class="modal__card">
+      <header class="modal__header">
+        <h3>¡Hablemos!</h3>
+        <button data-close class="modal__close" aria-label="Cerrar">×</button>
+      </header>
+      <div class="modal__body">
+        <p>¿Tienes un proyecto de soporte, redes, CCTV o POS? Escríbeme a
+          <a href="mailto:Claudiomiranda0311@gmail.com">Claudiomiranda0311@gmail.com</a>.
+        </p>
+      </div>
+      <footer class="modal__footer">
+        <a class="btn" href="#contacto" data-close>Ir al formulario</a>
+      </footer>
+    </article>
+  </dialog>
+</body>
+</html>

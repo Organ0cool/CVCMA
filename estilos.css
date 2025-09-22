@@ -1,0 +1,337 @@
+:root{
+  --bg:#0f1220; --bg-alt:#12162a; --surface:#161a2f; --text:#e6e9f2; --muted:#aab0c0;
+  --primary:#5b8cff; --primary-2:#7aa6ff; --chip:#222746; --border:#242a4a;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Inter",system-ui,-apple-system,Segoe UI,Roboto; color:var(--text);background:linear-gradient(180deg,var(--bg),#0b0e1a 60%,#0a0d18)}
+img{max-width:100%;display:block}
+.container{width:min(1100px,92%);margin-inline:auto}
+
+/* Header */
+.header{position:sticky;top:0;z-index:50;background:rgba(15,18,32,.75);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+.header__wrap{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
+.brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;color:var(--text)}
+.brand__logo{width:80px; height: 80px}
+.brand__name{font-weight:700}
+.nav__toggle{display:none;background:none;border:1px solid var(--border);color:var(--text);padding:.4rem .6rem;border-radius:8px}
+.nav__list{list-style:none;display:flex;gap:1rem;margin:0;padding:0}
+.nav__list a{color:var(--text);text-decoration:none;padding:.5rem .6rem;border-radius:10px}
+.nav__list a:hover{background:var(--chip)}
+.btn{background:var(--primary);border:none;color:white;padding:.8rem 1rem;border-radius:12px;text-decoration:none;display:inline-block;font-weight:600}
+.btn:hover{filter:brightness(1.08)}
+.btn--ghost{background:transparent;border:1px solid var(--primary);color:var(--primary)}
+.btn--sm{padding:.5rem .8rem;font-size:.9rem}
+
+/* Hero */
+.hero{padding:80px 0;background:radial-gradient(80% 60% at 50% 0%,rgba(91,140,255,.15),transparent),var(--bg)}
+.hero__wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:2rem;align-items:center}
+.hero__title{font-size:clamp(30px,5vw,46px);margin:.2rem 0 .4rem}
+.hero__title span{color:var(--primary)}
+.hero__subtitle{font-size:clamp(16px,2.8vw,20px);color:var(--muted);min-height:28px}
+.hero__img{width:260px;height:260px;object-fit:cover;border-radius:22px;box-shadow:0 10px 30px rgba(0,0,0,.4)}
+.hero__cta{display:flex;gap:1rem;margin-top:1rem}
+
+/* Secciones */
+.section{padding:70px 0}
+.section--alt{background:var(--bg-alt)}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+.list{padding-left:1.1rem}
+.list--inline{list-style:none;padding:0;margin:.8rem 0;display:flex;flex-wrap:wrap;gap:1rem}
+.muted{color:var(--muted)}
+.card{background:var(--surface);border:1px solid var(--border);padding:1rem 1.2rem;border-radius:14px}
+
+/* Chips */
+.chips{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:.6rem}
+.chip{background:var(--chip);padding:.4rem .7rem;border-radius:999px;font-size:.9rem;border:1px solid var(--border)}
+
+/* Timeline */
+.timeline{position:relative}
+.timeline::before{content:"";position:absolute;left:12px;top:0;bottom:0;width:2px;background:linear-gradient(var(--primary),transparent)}
+.timeline__item{position:relative;padding-left:38px;margin:26px 0}
+.timeline__marker{position:absolute;left:6px;top:.4rem;width:14px;height:14px;border-radius:50%;background:var(--primary)}
+.timeline__header{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;justify-content:space-between}
+.tag{background:#193266;color:#b8ccff;padding:.25rem .6rem;border-radius:999px;font-size:.8rem;border:1px solid #274a8f}
+.bullets{margin:.6rem 0 0 0}
+
+/* Cards y barras */
+.cards{list-style:none;padding:0;display:grid;grid-template-columns:1fr;gap:1rem}
+.bars{list-style:none;padding:0;display:grid;gap:.6rem}
+.bar{height:10px;background:#1b2240;border-radius:999px;overflow:hidden;border:1px solid var(--border)}
+.bar>div{height:100%;width:var(--pct,0);background:linear-gradient(90deg,var(--primary),var(--primary-2))}
+
+/* Video */
+.video{width:100%;aspect-ratio:16/9;border:1px solid var(--border);border-radius:12px;background:#000}
+
+/* Formulario */
+.form{display:grid;gap:1rem;max-width:680px}
+.form__row{display:grid;gap:.4rem}
+.form__row input,.form__row textarea{background:#0d1020;color:var(--text);border:1px solid var(--border);padding:.8rem;border-radius:10px}
+.form__row input:focus,.form__row textarea:focus{outline:2px solid #274a8f}
+.form__actions{display:flex;gap:.8rem}
+.form__status{min-height:1.2em;color:#a8ffc2}
+
+/* Footer */
+.footer{border-top:1px solid var(--border);padding:24px 0;background:#0a0d18}
+.footer__wrap{display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.social a{color:var(--muted);text-decoration:none;margin-left:1rem}
+.social a:hover{color:var(--text)}
+
+/* Modales */
+.modal{border:none;padding:0;background:transparent}
+.modal::backdrop{background:rgba(0,0,0,.55)}
+.modal__card{background:var(--surface);border:1px solid var(--border);border-radius:14px;max-width:640px;width:clamp(280px,92vw,640px)}
+.modal__header,.modal__footer{padding:12px 16px;border-bottom:1px solid var(--border)}
+.modal__footer{border-top:1px solid var(--border);border-bottom:none;display:flex;justify-content:flex-end;gap:.6rem}
+.modal__body{padding:16px}
+.modal__close{background:transparent;border:1px solid var(--border);color:var(--text);border-radius:10px;padding:.2rem .5rem}
+
+/* Animaciones (JS añadirá clases) */
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .8s ease, transform .8s ease}
+.reveal--visible{opacity:1;transform:translateY(0)}
+
+/* Responsive */
+@media (max-width: 860px){
+  .hero__wrap{grid-template-columns:1fr}
+  .grid-2{grid-template-columns:1fr}
+  .nav__toggle{display:inline-block}
+  .nav__list{position:absolute;right:1rem;top:64px;background:var(--bg-alt);border:1px solid var(--border);padding:.8rem;border-radius:12px;flex-direction:column;gap:.2rem;display:none}
+  .nav__list.show{display:flex}
+}
+
+/* ===== Mejora de legibilidad global ===== */
+:root{
+  /* sube ligeramente el contraste del texto secundario */
+  --muted: #c7cde0;
+}
+
+body{
+  font-size: 17px;          /* antes 16 aprox por defecto del navegador */
+  line-height: 1.7;         /* más aire entre líneas */
+  letter-spacing: 0.02em;   /* microtracking para pantallas */
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+/* Párrafos y listas largas no ocupan todo el ancho: ayudan a leer */
+.section p,
+.section .bullets,
+.section .list { 
+  max-width: 72ch; /* ~72 caracteres por línea */
+}
+
+/* Espaciado en listas de experiencias/tareas */
+.bullets li { 
+  margin: .35rem 0; 
+  line-height: 1.6;
+}
+
+/* Enlaces más visibles y con foco accesible */
+a { text-decoration-thickness: .08em; text-underline-offset: .15em; }
+a:hover { text-decoration: underline; }
+a:focus-visible { outline: 3px solid var(--primary); outline-offset: 3px; }
+
+/* Botones: tamaño táctil y foco */
+.btn { min-height: 44px; }
+.btn:focus-visible { outline: 3px solid var(--primary-2); outline-offset: 2px; }
+
+/* Títulos más claros en jerarquía */
+h2 { font-size: clamp(26px, 4.2vw, 32px); line-height: 1.25; margin: 0 0 .6rem; }
+h3 { font-size: clamp(18px, 2.8vw, 20px); line-height: 1.35; margin: 0; }
+
+/* Etiquetas/“tag” y chips con mejor legibilidad */
+.tag, .chip { 
+  font-size: .9rem; 
+  letter-spacing: .01em; 
+}
+
+/* ===== Estructura de secciones y contenedores ===== */
+.section { 
+  padding: 64px 0;            /* antes 60px; un poco más de aire */
+}
+
+.section h2 + p { 
+  margin-top: .4rem; 
+  color: var(--muted);
+}
+
+.container { 
+  width: min(1100px, 92%);    /* ya lo tienes; reforzamos */
+  margin-inline: auto; 
+}
+
+/* Grillas más cómodas en desktop y mejor “stacking” en móvil */
+.grid-2 { 
+  gap: clamp(1rem, 3vw, 2rem); 
+}
+
+/* Tarjetas más legibles */
+.card {
+  padding: 1.2rem 1.3rem;     /* + un poco de padding */
+  line-height: 1.6;
+}
+/* ===== Navegación ===== */
+.nav__list a { 
+  font-weight: 600; 
+}
+.nav__list a:focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* Menú móvil: aumenta área táctil y separación */
+@media (max-width: 860px){
+  .nav__toggle { 
+    padding: .55rem .75rem; 
+    min-height: 44px; 
+  }
+  .nav__list a {
+    padding: .7rem .8rem;     /* más fácil de pulsar */
+  }
+}
+/* ===== Timeline legible ===== */
+.timeline__item { 
+  margin: 30px 0;            /* +4px respecto a 26px aprox */
+}
+.timeline__header {
+  gap: .4rem;
+}
+.timeline__header h3 {
+  margin-right: .5rem;
+  white-space: normal;       /* permitir salto limpio en móvil */
+}
+.timeline__content p,
+.timeline__content .bullets { 
+  margin-top: .4rem; 
+}
+/* ===== Galería ===== */
+.gallery__item { 
+  box-shadow: 0 8px 24px rgba(0,0,0,.25);
+}
+.gallery__item img { 
+  filter: saturate(1.03); /* un toque de claridad sin romper paleta */
+}
+
+/* ===== Cards de estudios/cursos ===== */
+.cards { 
+  gap: 1.1rem; 
+}
+.cards .card p { 
+  margin: .4rem 0 0; 
+}
+/* ===== Modal legible ===== */
+.modal__card { 
+  max-width: min(720px, 92vw);
+  line-height: 1.65;
+}
+.modal__header h3 { 
+  font-size: clamp(20px, 3.2vw, 22px); 
+}
+.modal__close:focus-visible { 
+  outline: 3px solid var(--primary); 
+  outline-offset: 2px; 
+}
+/* ===== Respeta reduce motion ===== */
+@media (prefers-reduced-motion: reduce){
+  .reveal { 
+    opacity: 1 !important; 
+    transform: none !important; 
+    transition: none !important; 
+  }
+}
+.footer {
+  display: flex;
+  justify-content: center; /* centra horizontal */
+  align-items: center;     /* centra vertical */
+  color: var(--muted);
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer__nav {
+  display: flex;
+  justify-content: center; /* centra horizontal */
+  gap: .9rem;
+  flex-wrap: wrap;
+}
+/* Animación suave y estados */
+.modal { 
+  opacity: 0;
+  transform: scale(.98);
+  transition: opacity .2s ease, transform .2s ease;
+  border: none; 
+  padding: 0;
+  background: transparent; /* dejamos que la tarjeta tenga el fondo */
+}
+
+.modal[open] {
+  opacity: 1;
+  transform: none;
+}
+
+.modal::backdrop {
+  background: rgba(0,0,0,.5);
+}
+
+.modal__card {
+  max-width: min(720px, 92vw);
+  background: #0f1220;
+  color: #e7ecff;
+  border-radius: 12px;
+  padding: 16px 16px 12px;
+  box-shadow: 0 20px 60px rgba(0,0,0,.35);
+}
+
+/* ===== Galería en grilla 2×2 ===== */
+.gallery{
+  display: grid;
+  grid-template-columns: 1fr;         /* 1 columna en móvil */
+  gap: 1.2rem;
+}
+
+/* desde tablet/desktop: 2 columnas */
+@media (min-width: 768px){
+  .gallery{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Asegura que cada item fluya de arriba a abajo (imagen -> texto) */
+.gallery__item{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  border-radius: 12px;
+  overflow: hidden; /* por si el contenido se sale */
+}
+
+/* El caption con aire */
+.gallery__item figcaption{
+  padding-top: .25rem;
+}
+
+/* Evita overlays raros por z-index/posicionamientos */
+.gallery__item, .fadeshow{ position: relative; z-index: 0; }
+
+/* (ya lo tenías) El contenedor de las imágenes con fade */
+.fadeshow{
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.25);
+}
+.fadeshow > img{
+  position: absolute;
+  inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity .8s ease;
+  will-change: opacity;
+}
+.fadeshow > img.is-active{ opacity: 1; }
+@media (prefers-reduced-motion: reduce){
+  .fadeshow > img{ transition: none; }
+}
